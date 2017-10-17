@@ -12,7 +12,7 @@
 
 - (void)awakeFromNib
 {
-
+    [super awakeFromNib];
     //get image URLs
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Images" ofType:@"plist"];
     NSDictionary *imagePaths = [NSDictionary dictionaryWithContentsOfFile:plistPath];
